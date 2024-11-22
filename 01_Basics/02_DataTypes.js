@@ -1,6 +1,6 @@
 "use strict";  // treat all JS Code as newer version
 
-//Primitive  === call by value  
+//Primitive  === call by value  (Stack Memory)
    // 7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 // *JavaScript is a dynamically typed language. In dynamically typed languages all type checks are 
@@ -25,15 +25,18 @@ const anotherId = Symbol('123');
 const scoreValue = 100.3;
 const bigNumber = 23643543545345434n;
 
-console.log(id === anotherId);  //false
-console.log(typeof undefined);  //undefined
-console.log(typeof null);       //object
-console.log(typeof scoreValue); //Number
-console.log(typeof id); //symbol
-console.log(typeof bigNumber);  //bigint
+console.log(id === anotherId);     //false
+console.log(typeof name);          //String
+console.log(typeof age);           //number
+console.log(typeof isLoggedIn);    //boolean
+console.log(typeof undefined);     //undefined
+console.log(typeof null);          //object
+console.log(typeof scoreValue);    //Number
+console.log(typeof id);            //symbol
+console.log(typeof bigNumber);     //bigint
 
 
-//Non-Primitive === call by reference
+//Non-Primitive === call by reference  (heap memory)
    // Array, Objects, Functions    ==> object
 
 const heros = ["shaktiman","naagraj","doga"]
