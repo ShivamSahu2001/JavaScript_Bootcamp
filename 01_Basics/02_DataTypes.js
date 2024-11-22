@@ -1,6 +1,6 @@
 "use strict";  // treat all JS Code as newer version
 
-//Primitive  === call by value  (Stack Memory)
+//Primitive  === call by value  (Stack Memory,deep copy)
    // 7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 // *JavaScript is a dynamically typed language. In dynamically typed languages all type checks are 
@@ -36,7 +36,7 @@ console.log(typeof id);            //symbol
 console.log(typeof bigNumber);     //bigint
 
 
-//Non-Primitive === call by reference  (heap memory)
+//Non-Primitive === call by reference  (heap memory, shallow copy)
    // Array, Objects, Functions    ==> object
 
 const heros = ["shaktiman","naagraj","doga"]
