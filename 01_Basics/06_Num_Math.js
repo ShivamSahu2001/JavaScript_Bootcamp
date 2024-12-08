@@ -1,16 +1,18 @@
 const score = 400 
 const balance = new Number(100) 
 
-// console.log(score);                        //400
-// console.log(balance);                      //[Number: 100]
-// console.log(balance.toString().length);    //3
-// console.log(balance.toFixed(2));           //100.00
+// console.log(score);                        // 400
+// console.log(balance);                      // [Number: 100]
+// console.log(typeof balance);               // object
 
-const otherNumber = 123.8966;
-// console.log(otherNumber.toPrecision(4));
+// console.log(balance.toString().length);    // 3
+// console.log(balance.toFixed(2));           // 100.00
+
+const otherNumber = 123.8966;                 
+// console.log(otherNumber.toPrecision(4));      // 123.9
 
 const hundreds = 10000000;
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN')); // 1,00,00,000
 
 // ++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++++
 

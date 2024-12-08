@@ -21,4 +21,4 @@ const fullName = new String(' Shivam Sahu');   //Object
 // console.log(fullName.replace(" ",""));        //Shivam Sahu
 // console.log(fullName.replaceAll(" ",""));     //ShivamSahu
 // console.log(fullName.includes("Shivam"));     //true
-console.log(fullName.split(" "));                //[ '', 'Shivam', 'Sahu' ]
+// console.log(fullName.split(" "));                //[ '', 'Shivam', 'Sahu' ]
