@@ -5,24 +5,24 @@
 const mySym = Symbol("key1")
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    name: "Shivam",
+    "full name": "Shivam Sahu",
+    [mySym]: "mykey1",          //[] is not compulsory, if then console also
     age: 18,
     location: "Jaipur",
-    email: "hitesh@google.com",
+    email: "shivam@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser.email)           // shivam@google.com
+// console.log(JsUser["email"])        // shivam@google.com
+// console.log(JsUser["full name"])    // Shivam Sahu
+// console.log(JsUser[mySym])          // mykey1
 
-JsUser.email = "hitesh@chatgpt.com"
+// JsUser.email = "shivam@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+// JsUser.email = "shivam@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
@@ -32,5 +32,5 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());       // Hello JS user
+console.log(JsUser.greetingTwo());    // Hello JS user, Shivam
