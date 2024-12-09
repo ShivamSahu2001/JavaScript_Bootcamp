@@ -6,7 +6,7 @@
     console.log(`DB CONNECTED`);
 })();
 
-( (name) => {
-    // IIFE
-    console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh')
+// ( (name) => {
+//     // IIFE
+//     console.log(`DB CONNECTED TWO ${name}`);
+// } )('shivam')
