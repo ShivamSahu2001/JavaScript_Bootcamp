@@ -68,9 +68,11 @@ const course = {
 // Object Destructuring 
 
 const {courseInstructor: instructor} = course
+const {price} = course
 
 // console.log(courseInstructor);                   // courseInstructor is not defined
 // console.log(instructor);                         // shivam  
+// console.log(price)                               // 999
 
 // Api --- JSON Format
 
@@ -80,8 +82,8 @@ const {courseInstructor: instructor} = course
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// [
+//     {},
+//     {},
+//     {}
+// ]
