@@ -34,10 +34,10 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (userLoggedIn && debitCard && 2==3) {
+if (userLoggedIn && debitCard && 2==3) {  //false
     console.log("Allow to buy course");
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
+if (loggedInFromGoogle || loggedInFromEmail) { //true
     console.log("User logged in");
 }
