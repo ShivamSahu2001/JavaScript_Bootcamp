@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async in javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const changeText = function(){
+    //     document.querySelector('h1').innerHTML = "Welcome to Coding world!!"
+    // }
+    // const changeMe = setTimeout(changeText, 2000)
+    // document.getElementById('stop').addEventListener('click',function(){
+    //     clearTimeout(changeMe)
+    //     console.log("Stopped!!");
+    // })
+
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+    let intervalId;
+    document.getElementById('start').addEventListener('click',function(){
+        intervalId = setInterval(sayDate, 1000, "hi");
+    })
+
+    document.getElementById('stop').addEventListener('click',function(){
+        clearInterval(intervalId);
+        console.log("Stopped!!!")
+    })
+</script>
+</html>
